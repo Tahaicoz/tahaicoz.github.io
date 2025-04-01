@@ -9,6 +9,11 @@
 # --- Required options --- #
 ############################
 
+url: "https://tahaicoz.github.io"
+baseurl: ""
+
+
+
 # Name of website
 title: My website
 
