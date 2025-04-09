@@ -1,100 +1,89 @@
 ---
 layout: post
-title: Sample blog post to learn markdown tips
-subtitle: There's lots to learn!
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
-tags: [test]
-comments: true
-mathjax: true
-author: Bill Smith
+title: Web ve Browser
+subtitle: Web ve browser nasıl çalışır ?
+tags: [web, Broser]
+author: Taha
 ---
 
-{: .box-success}
-This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/tables/etc.<br/>I also encourage you to look at the [code that created this post](https://raw.githubusercontent.com/daattali/beautiful-jekyll/master/_posts/2020-02-28-sample-markdown.md) to learn some more advanced tips about using markdown in Beautiful Jekyll.
+Herkese selam bugün ilk taskım olan web ve browser nasıl çalışır ondan bahsedeceğim! Hazırsanız başlayalım 
 
-**Here is some bold text**
+## Web nedir ve nasıl çalışır
 
-## Here is a secondary heading
+Bildiklerime göre **Web ve Browser**'ın nasıl çalıştığını anlamamız için önce Web ve İnternetin nasıl çalıştığını anlamamız gerekiyor.
 
-[This is a link to a different site](https://deanattali.com/) and [this is a link to a section inside this page](#local-urls).
+## Web nedir ?
 
-Here's a table:
+her zaman görmüşüzdür linklerde **www**.örnek.com işte burdaki www **World Wide Web** dir ve biz buna kısaca web diyoruz. Web yazı,
+görsel gibi kısaca multimedya ve içerikleri internet aracılığıyla görünteleyibildiğimiz sayfalardır. İşin bu kısmında ise karşımıza
+HTML (Hyper text markup language) ve HTTP (hyper text transfer protocol) çıkıyor. Peki nedir bunlar ?
 
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
+## HTTP ve HTML
+HTTP ve HTML birbirleri için önemli ancak farklı şeylerdir 
 
-You can use [MathJax](https://www.mathjax.org/) to write LaTeX expressions. For example:
-When \\(a \ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+**HTTP** **H**yper **T**ext **T**ransfer **P**rotocol demek olduğundan bahsetmiştik şimdi bunun ne işe yaradığını ele alalım
+İnternet üzerinde bilgi iletmeyi sağlayan bir protokoldür. Bu protokol, bir web tarayıcısı ile bir web sunucusu arasındaki iletişimi
+ sağlar. Daha açık bir ifadeyle istemci(client) ve sunucu(server) arasındaki veri transferini yönetir. Bu sayede tarayıcının web sitelerini
+  görüntülemesini, dosyaları indirmesini veya dosya göndermesini sağlar.
 
-How about a yummy crepe?
+HTTP, tarayıcının web sunucularından HTML, CSS, JavaScript gibi dosyaları talep etmesini ve bu dosyaları alarak kullanıcının bilgisayarında
+ görüntülemesini sağlar. Bu sayede kullanıcılar internet üzerinde gezinirken web sayfalarını görebilirler.
 
-![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg)
+HTTP, dosya indirme ve yükleme işlemlerini de yönetir. Kullanıcılar, tarayıcı aracılığıyla HTTP protokolünü kullanarak dosya indirebilirler.
+ Web sayfalarındaki form alanları aracılığıyla kullanıcılar HTTP protokolü sayesinde sunucuya bilgi gönderebilir. Form doldurma, çeşitli hizmetlere
+  kayıt olma gibi işlemleri sağlar.
 
-It can also be centered!
+Web uygulamaları arasında veri paylaşımını sağlamak için kullanılan API’lar (Application Programming Interface) HTTP protokolünü temel alır.
+ Bu sayede farklı uygulamalar arasında veri alışverişi protokol üzerinden gerçekleşir
 
-![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg){: .mx-auto.d-block :}
+ HTTP’nin çalışma prensibi client — server ilişkisine dayanmaktadır bunu istek ve cevap gibi düşünebiliriz. Bu çalışma prensibini açıklamak gerekirse:
 
-Here's a code chunk:
+Request :
+Kullanıcı bir web sayfasını görüntülemek istediğinde istemci client bir HTTP isteği yapar. İstek, belirli bir kaynağı (örneğin bir web sayfasını) talep eden bir mesajdır. Bu mesaj, isteğin türünü GET, POST gibi ve talep edilen kaynağın adresini içerir.
 
-~~~
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-~~~
+Processing :
+Sunucu, isteği aldıktan sonra talep edilen kaynağı bulur ve gerekli işlemleri gerçekleştirir. Bu işlemler nedir? Veri tabanı sorguları, dosya okuma/yazma işlemleri veya dinamik içerik oluşturma gibi çeşitli işlemlerdir.
 
-And here is the same code with syntax highlighting:
+Response :
+Sunucu talep edilen işlemi tamamladıktan sonra bir HTTP yanıtı oluşturur. Yanıt, sunucunun yaptığı işlemlerin sonucunu içerir.
 
-```javascript
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-```
+İnternet Üzerinde Transfer:
+Sunucu, oluşturulan yanıtı HTTP protokolü ile istemciye geri gönderir ve kullanıcının görüntülemesini sağlar.
 
-And here is the same code yet again but with line numbers:
+Bu client — server iletişim şekli, HTTP’nin temel çalışma prensibini oluşturur. client bir kaynak talep eder ve server bu talebi karşılar. Bu basit işlem sayesinde internet üzerinden bilgi alışverişi sağlanır.
 
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-{% endhighlight %}
+## HTTPS nedir ?
 
-## Boxes
-You can add notification, warning and error boxes like this:
+Yine web adreslerinde gördüğümüz https HTTP ile aynı ancak sondaki **S** **Security**'i belirtir yani HTTP şifrelenmemiş  veri iken HTTPS şifrelenmiş veridir bu yüzden https ile verilerimiz daha güvendedir  
 
-### Notification
+## HTML nedir ? 
+
+HTML; **H**yper **T**ext **M**arkup **L**anguage'dir isminden de anlaşılacağı üzere bir işaretleme dilidir bu işaretlemeye biz **tags** diyoruz örneğin benim burdaki
+tags yazısını kalınlaştırmam bir tag sayesinde oldu. HTML taglardan oluşur bu taglar sayesindede biz sitemizin iskeletini oluşturmuş oluruz iskeletten örnek vermişken 
+web sitelerini bir insan vücudu olarak düşünelim. Bu vücudun iskelet sistemini HTML oluşturur neyin nerede olacağını ve dik durmasını sağlayan kemiklerdir yani HTML
+ve tabii ki kaslarımızda var vücudumuzda işte bu kaslar **javascript**'tir hareketimizi sağlar ve istediğimiz yere yönelip hareketimizi sağlar sitemiz için en basit örnek bir butona basıp bizi sitemizdeki farklı bir yere götürmesidir. Son olarakda bu kaslarımızın üzerinde derimiz var bunuda sitemizde CSS olarak adlandırıyoruz CSS, tamamen dış görünüş üzerinedir sitemizin butonları ve arayüzü CSS sayesinde şekil alır.
+
+
+## Web nasıl çalışır 
+
+Artık Web nedir ve nelerden oluşur biliyoruz şimdi ise nasıl çalıştığına bakalım.
+
+Web, client ve server arasında veri alışverişi yaparak çalıştığını söylemiştir. Her bir web sayfası ve içerik, bu iki taraf arasında sürekli bir etkileşim sonucu oluşturulur.
+
+**Client** :
+Client, web sayfasına erişmeye çalışan cihazdır. Çoğunlukla bu bir web tarayıcısıdır Google Chrome, Mozilla Firefox, Safari gibi. Tarayıcı, kullanıcının istediği sayfayı alır ve görüntüler.
+
+**Server** :
+Server, web sitesi dosyalarının ve içeriğinin depolandığı bilgisayardır. Bu sunucu, istemciden gelen istekleri alır, işler ve karşılığında içerik gönderir.
 
 {: .box-note}
-**Note:** This is a notification box.
+**Unutmayalım:** İnternete erişmi olan bütün cihazlar haberleşmek için bir IP adresi vardır
 
-### Warning
 
-{: .box-warning}
-**Warning:** This is a warning box.
 
-### Error
+Ve şöylede bir şey var ki her site domaini (alan adı) aslında bir IP adresidir hatta insanlar bu sitelere erişimin kolaylaşması adında domain sistemini geliştirmişlerdir çünkü ben bir siteye girmek için sayıları aklımda tutmaktansa sitenin domainini (genellikle bu yüzden sitenin isminin amacı olması iyidir) aklımda tutmam daha kolay olucaktır. Ancak bilgisayarda işler farklı bilgisayar bu siteyi IP adresi olarak arar ve domaini IP adresine dönüştüren şeyde **DNS**'tir
 
-{: .box-error}
-**Error:** This is an error box.
+**DNS nedir ?** DNS yani **D**omain **N**ame **S**ystem'dir az önce bilgisayarların haberleşmek için IP adresi kullandığını söylemiştik işte DNS ise tamda burada devreye giriyor. Bizim girdiğimiz bütün domainlerin IP adresini buluyor ve bunuda HTTP protokolünden anlatıcak olursak bizim girdiğimiz domain DNS server'ine bir istek olarak gider server bu ip adresindeki siteyi bize bulur ve cevap olarak geri gönderir ve tarayıcda web sayfası görüntülenir.
 
-## Local URLs in project sites {#local-urls}
-
-When hosting a *project site* on GitHub Pages (for example, `https://USERNAME.github.io/MyProject`), URLs that begin with `/` and refer to local files may not work correctly due to how the root URL (`/`) is interpreted by GitHub Pages. You can read more about it [in the FAQ](https://beautifuljekyll.com/faq/#links-in-project-page). To demonstrate the issue, the following local image will be broken **if your site is a project site:**
-
-![Crepe](/assets/img/crepe.jpg)
-
-If the above image is broken, then you'll need to follow the instructions [in the FAQ](https://beautifuljekyll.com/faq/#links-in-project-page). Here is proof that it can be fixed:
-
-![Crepe]({{ '/assets/img/crepe.jpg' | relative_url }})
-
-<details markdown="1">
-<summary>Click here!</summary>
-Here you can see an **expandable** section
-</details>
+{: .box-note}
+**DNS caching:** yani DNS önbellekleme girdiğimiz bir sitenin adresini tarayıcı ön belleğinde tutar ve tekrar istek gönderip cevap beklemek zorunda kalmaz buda bize zaman kazandırır.
