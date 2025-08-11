@@ -2,7 +2,7 @@
 layout: post
 title: Web ve Browser
 subtitle: Web ve browser nasıl çalışır ?
-tags: [web, Broser]
+tags: [web, Browser]
 author: Taha
 ---
 
