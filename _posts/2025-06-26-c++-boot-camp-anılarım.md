@@ -1,10 +1,13 @@
 ---
 layout: post
-title: anakod akademi bootcamp anılarım
+title: Anakod akademi bootcamp anılarım
 subtitle: 2025 c++ bootcamp' te öğrendiklerim 
 tags: [bootcamp, c++,]
-author: Sharon Smith and Barry Simpson
+author: Taha
 ---
+
+Evvvveett bugün de bootcamp tecrübelerimi anlatıyorum
+
 
 ## İlk Bootcamp'im 
 Evet bu benim ilk katıldığım bootcampti biraz stresli geçmişti ancak yanımda arkadaşım ve kuzenim olunca rahattım eğlenceliydi de
