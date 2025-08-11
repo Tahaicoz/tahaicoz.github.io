@@ -1,16 +1,15 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Yazılım öğrenme sırasındaki anılarım ve projelerim
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Selam Ben Taha İÇÖZ yazılım öğrenme aşamalarım sizinle
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- JS bir babadır bizim için 
+- 16 yaşımda açtım bu blogu bakalım 
 
-What else do you need?
 
-### My story
+### Hikayem
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+ben zaten pc ye ilgili biriyim çocukluktan beri 6.sınıftan beri 5 tane projem var. yazılımlada kuzenim Doğukan Abim sayesinde tanıştım sayesinde ilerlemeye çalışıyorum bu blogu açmamı da Utku abim task olarak verdi ikisine de teşekkür ederim ilgileniyolar o kadar ben biraz ilgisizdim ama katlandı üstadlar. Şimdi yapmaktan başka bi çare kalmadı ondan ilgilenmemem söz konusu değil yapışıcaz derslere ve yakalarına.
